@@ -86,28 +86,28 @@ header {
 .hero-title {
   position: absolute;
   top: 175px;
-  right: 100px; /* Остаётся справа */
+  right: 100px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 36px;
   color: #fff;
   margin: 0;
-  text-align: left; /* Текст внутри выровнен влево */
-  width: 100%; /* Добавлено для правильного выравнивания */
-  max-width: 300px; /* Ограничиваем ширину */
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Подзаголовок Battlefront II */
 .hero-subtitle {
   position: absolute;
   top: 215px;
-  right: 100px; /* Остаётся справа */
+  right: 100px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
   color: #fff;
   margin: 0;
-  text-align: left; /* Текст внутри выровнен влево */
+  text-align: left;
   width: 100%;
   max-width: 300px;
 }
@@ -116,7 +116,7 @@ header {
 .hero-buttons {
   position: absolute;
   top: 400px;
-  right: 100px; /* Остаётся справа */
+  right: 100px;
   display: flex;
   gap: 13px;
 }
@@ -217,8 +217,140 @@ header {
   cursor: pointer;
   transition: opacity 0.2s;
 }
-.ball img {
-   position: absolute;
-    left: 50%;
+
+/* ИСПРАВЛЕНО: правильное центрирование логотипа */
+.ball {
+  text-align: center;
 }
 
+.ball img {
+  max-width: 50px;
+}
+
+/* ========== МОБИЛЬНАЯ ВЕРСИЯ ========== */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .nav-list {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .hero {
+    height: 500px;
+    background-position: 70% center;
+  }
+
+  .hero-container {
+    height: 500px;
+  }
+
+  .hero-title {
+    top: auto;
+    bottom: 120px;
+    right: 20px;
+    font-size: 28px;
+    max-width: 250px;
+  }
+
+  .hero-subtitle {
+    top: auto;
+    bottom: 85px;
+    right: 20px;
+    font-size: 18px;
+    max-width: 250px;
+  }
+
+  .hero-buttons {
+    top: auto;
+    bottom: 25px;
+    right: 20px;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 120px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  .highlights {
+    padding: 40px 0;
+  }
+
+  .highlights-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .highlights-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-image {
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 420px;
+  }
+
+  .hero-container {
+    height: 420px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+    bottom: 100px;
+    max-width: 200px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    bottom: 70px;
+    max-width: 200px;
+  }
+
+  .hero-buttons {
+    bottom: 15px;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 105px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .nav-list {
+    gap: 15px;
+  }
+
+  .header-container a {
+    font-size: 13px;
+  }
+
+  .highlights-title {
+    font-size: 20px;
+  }
+}
