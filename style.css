@@ -64,3 +64,161 @@ header {
   outline: none;
   width: 160px;
 }
+
+/* Hero секция */
+.hero {
+  background-image: url("./img/1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 648px;
+  position: relative;
+}
+
+/* Контейнер */
+.hero-container {
+  position: relative;
+  z-index: 2;
+  height: 648px;
+}
+
+/* Заголовок Star Wars */
+.hero-title {
+  position: absolute;
+  top: 175px;
+  right: 100px; /* Остаётся справа */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+  text-align: left; /* Текст внутри выровнен влево */
+  width: 100%; /* Добавлено для правильного выравнивания */
+  max-width: 300px; /* Ограничиваем ширину */
+}
+
+/* Подзаголовок Battlefront II */
+.hero-subtitle {
+  position: absolute;
+  top: 215px;
+  right: 100px; /* Остаётся справа */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  text-align: left; /* Текст внутри выровнен влево */
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Кнопки */
+.hero-buttons {
+  position: absolute;
+  top: 400px;
+  right: 100px; /* Остаётся справа */
+  display: flex;
+  gap: 13px;
+}
+
+.btn {
+  width: 136px;
+  height: 38px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Первая кнопка Watch Trailer */
+.btn-primary {
+  background-color: #8dd83d;
+  color: white;
+}
+
+/* Вторая кнопка Explore Games */
+.btn-secondary {
+  background-color: #686c6f;
+  color: white;
+}
+
+/* ========== HIGHLIGHTS СЕКЦИЯ ========== */
+.highlights {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+}
+
+.highlights-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* 3 карточки в ряд */
+.highlights-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Одна цельная карточка */
+.highlight-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* Фото сверху */
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Заголовок */
+.card-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: #8dd83d;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+
+/* Описание */
+.card-desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+/* Кнопка */
+.card-btn {
+  background-color: #8dd83d;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.ball img {
+   position: absolute;
+    left: 50%;
+}
+
